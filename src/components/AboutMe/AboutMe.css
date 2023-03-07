@@ -1,0 +1,113 @@
+.about {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+
+.education__list {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+
+.skills__list {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.instruments__list {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  position: relative;
+}
+/* .skills__list-item {
+  list-style-type: square;
+} */
+
+.list-item__year {
+  width: 70px;
+}
+
+
+.education__icon {
+  background: url(../../images/diploma.png) no-repeat;
+  background-size: contain;
+  background-position: center center;
+  width: 80px;
+  height: 80px;
+  width: 100%;
+}
+
+.skills__icon {
+  background: url(../../images/skills.png) no-repeat;
+  background-size: contain;
+  background-position: center center;
+  width: 80px;
+  height: 80px;
+  width: 100%;
+}
+
+.instruments__icon {
+  background: url(../../images/instrument.png) no-repeat;
+  background-size: contain;
+  background-position: center center;
+  width: 80px;
+  height: 80px;
+  width: 100%;
+}
+
+.skills__list-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.instruments__photo {
+  width: 100%;
+  max-width: 400px;
+  position: absolute;
+  top: -200px;
+  right: 150px;
+  transform: rotate(10deg);
+  opacity: 0.7;
+  border-radius: 10px;
+  z-index: 0;
+}
+
+.container {
+  max-width: 100%;
+ 
+  border-radius: 25px;
+  
+  /* box-shadow: 0 1px 4px rgba(0, 0, 0, 1),
+  -23px 0 20px -23px rgba(0, 0, 0, .8),
+  23px 0 20px -23px rgba(0, 0, 0, .8),
+  0 0 40px rgba(0, 0, 0, .1) inset; */
+  box-shadow: 0 0 10px 5px rgba(221, 221, 221, 1);
+  /* box-shadow: 3px 3px #06b6d4, 6px 6px #6c6666; */
+}
+
+@media screen and (max-width: 500px) {
+  .about {
+    display: flex;
+    flex-direction: column;
+    padding-top: 40px;
+    padding-bottom: 20px;
+  }
+  .container {
+    margin-bottom: 20px;
+    margin-right: 0;
+  }
+  .education__list {
+    padding-top: 10px;
+    padding-bottom: 10px
+  }
+
+  .skills__list {
+    padding-top: 10px;
+    padding-bottom: 10px
+  }
+  .instruments__list {
+    padding-top: 10px;
+    padding-bottom: 10px
+  }
+}

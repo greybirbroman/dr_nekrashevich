@@ -1,0 +1,44 @@
+.landing {
+    height: 800px;
+}
+
+.figure {
+    max-width: 50%;
+    width: 1822px;
+    height: 1220px;
+    margin-top: -150px;
+    position: absolute;
+    top:0;
+    right: 0;
+}
+
+.landing__link {
+    width: 61px;
+    height: 56px;
+    background: #C4C4C4;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: 40px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.landing__link_vk {
+    background-image: url(../../images/vk_logo.png);
+}
+
+.landing__link_telegram {
+    background-image: url(../../images/telegram_logo.png);
+}
+
+.landing__link_gmail {
+    background-image: url(../../images/gmail_logo.png);
+}
+
+
+.link {
+    width: 100%;
+    height: 100%;
+}
