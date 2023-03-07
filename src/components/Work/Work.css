@@ -1,29 +1,20 @@
 .work {
-    border-radius: 25px;
-    box-shadow: 0 0 10px 5px rgba(221, 221, 221, 1);
+  border-radius: 25px 25px 0 0;
 }
 
 .work__item-link {
-    background-position: center center;
-    display: block;
-    width: 48px;
-    height: 48px;
+  background-position: center center;
+  display: block;
+  width: 48px;
+  height: 48px;
 }
 
 .work__item-link_whatsapp {
-    background: transparent url(../../images/whatsapp_work.png) no-repeat;
-    background-size: cover;
+  background: transparent url(../../images/whatsapp_work.png) no-repeat;
+  background-size: cover;
 }
 
 .work__item-link_telegram {
-    background: transparent url(../../images/telegram_work.png) no-repeat;
-    background-size: cover;
+  background: transparent url(../../images/telegram_work.png) no-repeat;
+  background-size: cover;
 }
-
-/* @media screen and (max-width: 500px) {
-    .work__container {
-        flex-direction: column;
-        align-items: center;
-    }
-    
-} */

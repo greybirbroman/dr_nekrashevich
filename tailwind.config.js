@@ -15,11 +15,14 @@ module.exports = {
         '1': '1 0 auto',
       },
       screens: {
-        'sm': {'min': '400px', 'max': '767px'},
+        'xs': {'min': '320px', 'max': '417px'},
+
+        
+        'sm': {'min': '320px', 'max': '767px'},
         // => @media (min-width: 640px and max-width: 767px) { ... }
   
-        // 'md': {'min': '768px', 'max': '1023px'},
-        // // => @media (min-width: 768px and max-width: 1023px) { ... }
+        'md': {'min': '768px', 'max': '981px'},
+        // => @media (min-width: 768px and max-width: 1023px) { ... }
   
         'lg': {'min': '768px', 'max': '1535px'},
         // => @media (min-width: 1024px and max-width: 1279px) { ... }

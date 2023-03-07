@@ -1,37 +1,36 @@
 import "./Work.css";
-import denteriaLogo from '../../images/Denteria_logo_horizont.png';
 
 function Work() {
 
   return (
-    <section id='t2' className='work bg-gradient-to-r from-white to-cyan-500 py-4 px-4'>
-      <h2 className='work__title text-center text-2xl font-semibold uppercase tracking-wider text-white'>Записаться на прием</h2>
-      <div className='work__container flex flex-col'>
+    <section id='t2' className='work bg-gradient-to-b from-gray-100 to-cyan-500 py-4 px-4'>
+      <h2 className='work__title text-center text-2xl font-semibold uppercase tracking-wider text-cyan-700'>Записаться на прием</h2>
+      <div className='work__container flex-col'>
         <div className='work__column'>
           <ul className='work__list'>
             <li className='work__item'>
-              <h3 className='work__item text-cyan-500 sm: text-lg py-2 font-semibold'>Адресс</h3>
-              <p className='work__item-text text-gray-700'>
+              <h3 className='py-2 text-gray-700 font-semibold'>Адресс</h3>
+              <p className='text-cyan-700'>
                 197198, Санкт-Петербург, ул. Пионерская, д. 8
               </p>
             </li>
             <li className='work__item'>
-              <h3 className='work__item text-cyan-500 sm: text-lg py-2 font-semibold'>E-mail</h3>
-              <p className='work__item-text text-gray-700'>clinic@denteria.ru</p>
+              <h3 className='text-gray-700 py-2 font-semibold'>E-mail</h3>
+              <p className='text-cyan-700'>clinic@denteria.ru</p>
             </li>
             <li className='work__item'>
-              <h3 className='work__item text-cyan-500 sm: text-lg py-2 font-semibold'>Телефон</h3>
-              <p className='work__item-text text-gray-700'>+7(812)209-1607</p>
+              <h3 className='text-gray-700 py-2 font-semibold'>Телефон</h3>
+              <p className='text-cyan-700'>+7(812)209-1607</p>
             </li>
             <li className='work__item'>
-              <h3 className='work__item text-cyan-500 sm: text-lg py-2 font-semibold'>Режим работы</h3>
-              <p className='work__item-text text-gray-700'>Пн-Вс 09:00-21:00</p>
+              <h3 className='text-gray-700 py-2 font-semibold'>Режим работы</h3>
+              <p className='text-cyan-700'>Пн-Вс 09:00-21:00</p>
             </li>
             <li className='work__item'>
-              <h3 className='work__item text-cyan-500 sm: text-lg py-2 font-semibold'>Связаться с администратором</h3>
-              <div className="work__item-container flex pb-4">
-              <a href='#' className='work__item-link work__item-link_whatsapp mr-3 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110'></a>
-              <a href='#' className='work__item-link work__item-link_telegram transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110'></a>
+              <div className="work__item-container flex items-center pb-2">
+              <h3 className='text-gray-700 font-semibold'>Связаться с администратором</h3>
+              <a target='_blank' rel='noreferrer' href='https://api.whatsapp.com/send?phone=79215863777' className='work__item-link work__item-link_whatsapp ml-3 mr-3 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110'>{''}</a>
+              <a target='_blank' rel='noreferrer' href='https://t.me/+79215863777' className='work__item-link work__item-link_telegram transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110'>{''}</a>
               </div>
             </li>
           </ul>
