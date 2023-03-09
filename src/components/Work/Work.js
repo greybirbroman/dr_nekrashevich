@@ -4,7 +4,7 @@ function Work() {
 
   return (
     <section id='t2' className='work bg-gradient-to-b from-gray-100 to-cyan-500 py-4 px-4'>
-      <h2 className='work__title text-center text-2xl font-semibold uppercase tracking-wider text-cyan-700'>Записаться на прием</h2>
+      {/* <h2 className='work__title text-center text-2xl uppercase text-cyan-700'>Записаться на прием</h2> */}
       <div className='work__container flex-col'>
         <div className='work__column'>
           <ul className='work__list'>

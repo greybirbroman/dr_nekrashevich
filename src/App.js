@@ -15,7 +15,7 @@ function App() {
 
         <main className='flex-col flex-1'>
           <Landing />
-          <SocialLinksBar />
+          <SocialLinksBar className={'flex justify-center bg-gray-200 w-full py-2 sm:py-1 sticky top-0 z-50'} />
           <AboutMe />
           <Work />
         </main>
