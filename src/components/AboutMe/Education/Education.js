@@ -10,10 +10,14 @@ function Education() {
     <motion.div
       variants={textByYAnimation}
       custom={1}
-      className='container z-10 py-4 px-4 md:py-3 md:px-3 sm:py-2 sm:px-2 mr-5 md:mb-3 md:mr-0 sm:mr-0 sm:mb-3 flex-col bg-gradient-to-r from-white to-gray-200 text-gray-700'
+      className='container z-10 py-4 px-4 md:py-3 md:px-3 sm:py-2 sm:px-2 mr-5 md:mb-5 md:mr-0 sm:mr-0 sm:mb-5 flex-col bg-gradient-to-t from-white to-gray-200'
+      style={{
+        boxShadow:
+          "2px -2px 5px 0 rgba(0,0,0,.1), -2px -2px 5px 0 rgba(0,0,0,.1), 2px 2px 5px 0 rgba(0,0,0,.1), -2px 2px 5px 0 rgba(0,0,0,.1)",
+      }}
     >
       <div className='flex flex-col items-center'>
-        <h2 className='education text-2xl uppercase tracking-wider'>
+        <h2 className='education text-2xl uppercase text-gray-700'>
           Образование
         </h2>
         <div className='education__icon mb-3'></div>

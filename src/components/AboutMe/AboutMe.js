@@ -10,7 +10,7 @@ function AboutMe() {
       initial='hidden'
       whileInView='visible'
       id='t1'
-      className='bg-white flex mb-28 mt-28 px-4 md:px-3 sm:px-2 sm:flex-col sm:mt-10 sm:mb-10 md:flex-col md:mb-14 md:mt-14'
+      className='flex mt-10 mb-10 px-4 md:px-3 sm:px-2 sm:flex-col md:flex-col'
     >
       <Education />
       <Specialization />

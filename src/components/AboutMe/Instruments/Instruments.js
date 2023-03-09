@@ -6,7 +6,11 @@ function Instruments() {
         <motion.div
         variants={textByYAnimation}
         custom={3}
-        className='container z-10 py-4 px-4 md:py-3 md:px-3 sm:py-2 sm:mr-0 sm:mb-2 bg-gradient-to-r from-white to-gray-200 text-gray-700'
+        className='container z-10 py-4 px-4 sm:px-2 md:py-3 md:px-3 sm:py-2 sm:mr-0 sm:mb-2 bg-gradient-to-t from-white to-gray-200 text-gray-700'
+        style={{
+            boxShadow:
+              "2px -2px 5px 0 rgba(0,0,0,.1), -2px -2px 5px 0 rgba(0,0,0,.1), 2px 2px 5px 0 rgba(0,0,0,.1), -2px 2px 5px 0 rgba(0,0,0,.1)",
+          }}
       >
         <div className='section__container flex flex-col items-center>'>
           <h2 className='text-2xl uppercase tracking-wider text-center'>

@@ -36,7 +36,7 @@ function Work() {
           </ul>
         </div>
         <div className='work__map'>
-          <div style={{position:'relative', overflow:'hidden'}}>
+          <div style={{position:'relative', overflow:'hidden', borderRadius: '25px'}}>
             <a
               href='https://yandex.ru/maps/org/denteriya/149051823874/?utm_medium=mapframe&utm_source=maps'
               style={{color:'#eee', fontSize:'12px', position:'absolute', top:'0px'}}

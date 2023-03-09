@@ -2,6 +2,7 @@ import React from "react";
 import "./App.css";
 import Header from "./components/Header/Header";
 import Landing from "./components/Landing/Landing";
+import SocialLinksBar from "./components/SocialLinksBar/SocialLinksBar";
 import AboutMe from "./components/AboutMe/AboutMe";
 import Work from "./components/Work/Work";
 import Footer from "./components/Footer/Footer";
@@ -11,11 +12,14 @@ function App() {
     <div className='App'>
       <div className='wrapper'>
         <Header />
+
         <main className='flex-col flex-1'>
           <Landing />
+          <SocialLinksBar />
           <AboutMe />
           <Work />
         </main>
+
         <Footer />
       </div>
     </div>
