@@ -3,7 +3,7 @@ import {motion} from "framer-motion";
 function HeaderLink({href, text}) {
   return (
     <motion.a
-      className='w-auto py-2 px-2 xs:py-1 xs:px-1 xs:w-fit font-semibold z-20 rounded border-2 border-white bg-cyan-500 text-white hover:border-cyan-900 ml-3'
+      className='w-auto py-2 px-2 sm:py-2 sm:px-2 sm:w-fit sm:font-medium font-semibold z-20 rounded-xl bg-cyan-700 text-white text-center hover:border-cyan-700 ml-3'
       href={href}
       whileHover={{
         scale: 1.1,

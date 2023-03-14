@@ -4,7 +4,7 @@ import HeaderLink from "../HeaderLink/HeaderLink";
 function Header() {
   return (
     
-    <header className='flex justify-between items-center py-2 px-2 z-50'>
+    <header className='flex justify-between items-center py-2 px-5 z-50'>
       <Logo />
       <nav className='flex'>
         <HeaderLink href='#t1' text='Узнать обо мне' />

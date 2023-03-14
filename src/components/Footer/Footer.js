@@ -1,27 +1,35 @@
-
-import Link from "../Link/Link";
 import SocialLinksBar from "../SocialLinksBar/SocialLinksBar";
+import Work from "../Work/Work";
+import bgImage from "../../images/footer-image.jpg";
 
 function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className='bg-cyan-500 flex flex-col items-center flex-0'>
-      <SocialLinksBar className={'flex justify-center bg-cyan-500 w-full py-2 sm:py-1'}/>
-      <span className='text-cyan-700 text-sm'>icons by icons8</span>
-      <div className='flex'>
+    <footer
+      id='t2'
+      className='pt-4 px-4 bg-opacity-10 relative'
+      style={{
+        backgroundImage: `url(${bgImage})`,
+        backgroundSize: "cover",
+        backgroundRepeat: "no-repeat",
+        backgroundPosition: "center",
+      }}
+    >
+      <Work />
+      <SocialLinksBar className={"flex justify-center w-full py-2 sm:py-1"} />
+      <div className='flex flex-col items-center justify-center'>
+        <span className='text-cyan-700 text-sm'>icons by icons8</span>
         <a
-          className='footer__author text-gray-700 text-sm'
+          className='text-gray-700 text-sm'
           href='https://github.com/greybirbroman'
           target='_blank'
           rel='noreferrer'
         >
           Created by RomanFedorov
         </a>
+        <p className='text-gray-700 text-sm mr-1'>&#169;{year}</p>
       </div>
-        <p className='footer__copyright text-gray-700 text-sm mr-1'>
-          &#169;{year}
-        </p>
     </footer>
   );
 }

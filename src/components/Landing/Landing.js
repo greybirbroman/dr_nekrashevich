@@ -1,9 +1,18 @@
+import { useRef } from "react";
+import mainImage from '../../images/main-image.jpg';
 import "./Landing.css";
-import { easeOut, motion } from "framer-motion";
-import Link from "../Link/Link";
+import { motion, useScroll, useTransform } from "framer-motion";
+
 
 function Landing(options) {
   const experience = new Date().getFullYear() - 2013;
+  let ref = useRef()
+  let { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ['start start', 'end start']
+  })
+  let y = useTransform(scrollYProgress, [0, 1], ['0%', '100%'])
+  let opacity = useTransform(scrollYProgress, [0, 1], [1, 0]);
 
   const textByXAnimation = {
     hidden: {
@@ -21,36 +30,36 @@ function Landing(options) {
 
   return (
     <motion.section
-      initial='hidden'
-      whileInView='visible'
-      className='landing flex  flex-col items-center justify-around bg-gradient-to-t from-gray-200 to-cyan-500'
+    ref={ref}
+    initial='hidden'
+    whileInView='visible'
+    className='landing flex  flex-col min-h-[570px]'
+    style={{
+      backgroundImage: `url(${mainImage})`,
+      backgroundPosition: 'center',
+      backgroundSize: 'cover',
+      backgroundRepeat: 'no-repeat',
+
+    }}
     >
-      <div className='flex flex-col justify-center bio z-20 px-2'>
+      <motion.div style={{y}}className='flex flex-col items-end z-20 px-3 pt-32'>
         <motion.h1
           custom={1}
           variants={textByXAnimation}
-          className='landing__text text-gray-800 text-5xl sm:text-4xl py-5 font-semibold text-center'
+          className='landing__text text-gray-700 text-5xl md:text-4xl sm:text-3xl pb-5 font-semibold text-right text'
         >
-          Некрашевич Марина Сергеевна
+          Некрашевич <br /> Марина Сергеевна
         </motion.h1>
-        <motion.p
+        <motion.h2
           custom={2}
           variants={textByXAnimation}
-          className='landing__subtext text-center text-l sm:text-sm font-semibold text-gray-500 pb-5'
+          className='landing__subtext text-center text-l sm:text-sm font-semibold text-gray-700 w-60'
         >
           Врач-стоматолог-терапевт / врач-стоматолог детский
           <br />
           Стаж {experience} лет
-        </motion.p>
-
-        
-      </div>
-
-      {/* <motion.div
-        className='figure bg-gradient-to-r from-gray-200 to-cyan-500 z-0 rounded absolute'
-        animate={{ rotate: 360 }}
-        transition={{ duration: 40, repeat: Infinity, ease: "linear" }}
-      ></motion.div> */}
+        </motion.h2>
+      </motion.div>
     </motion.section>
   );
 }
