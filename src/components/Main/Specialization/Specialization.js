@@ -17,11 +17,8 @@ function Specialization() {
       >
         <CardTitle title='Специализация' />
         <div className='absolute -z-10 w-full opacity-60 top-0 bottom-0 left-0 right-0 bg-black'></div>
-        {/* <div className='bg-gradient-to-r from-white to-cyan-700 opacity-20 h-full w-full -rotate-12 absolute top-0 right-0 left-0 bottom-0 -z-10'></div> */}
-        <div className='flex flex-col items-center'>
-          {/* <div className='skills__icon mb-3'></div> */}
-        </div>
-        <ul className='flex-col font-medium text-white space-y-3'>
+        <div className='flex flex-col items-center'></div>
+        <ul className='flex-col font-normal text-white space-y-3'>
           <li className='flex items-center'>
             <img className='icon' src={icon} alt='Иконка' />
             <span className='pl-2'>Лечение взрослых и детей</span>

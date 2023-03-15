@@ -17,26 +17,26 @@ function Instruments() {
         <CardTitle title='Инструменты' />
         <div className='absolute -z-10 w-full opacity-50 top-0 bottom-0 left-0 right-0 bg-black'></div>
         <div className='flex flex-col items-center'></div>
-        <ul className='flex-col font-medium text-white space-y-3'>
+        <ul className='flex-col font-normal text-white space-y-3'>
           <li className='flex items-baseline'>
             <img className='icon' src={icon} alt='Иконка' />
             <p className='pl-2'>
               Дентальный микроскоп OPMI pico MORA{" "}
-              <span className='text-cyan-500'>(Carl Zeiss, Германия)</span>
+              <span className='text-cyan-500 font-mono'>(Carl Zeiss, Германия)</span>
             </p>
           </li>
           <li className='flex items-baseline'>
             <img className='icon' src={icon} alt='Иконка' />
             <p className='pl-2'>
               Диодный лазер Doctor Smile{" "}
-              <span className='text-cyan-500'>(Lambda S.p.A., Италия)</span>
+              <span className='text-cyan-500 font-mono'>(Lambda S.p.A., Италия)</span>
             </p>
           </li>
           <li className='flex items-baseline'>
             <img className='icon' src={icon} alt='Иконка' />
             <p className='pl-2'>
               CAD/CAM система CEREC MC XL Premium Package{" "}
-              <span className='text-cyan-500'>(Dentsply Sirona, Германия)</span>
+              <span className='text-cyan-500 font-mono'>(Dentsply Sirona, Германия)</span>
             </p>
           </li>
         </ul>

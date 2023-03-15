@@ -19,20 +19,20 @@ function Education() {
         <CardTitle title='Образование' />
         <div className='absolute w-full opacity-[0.3] top-0 bottom-0 left-0 right-0 -z-10 bg-black'></div>
         <div className='flex flex-col items-center'></div>
-        <ul className='flex-col font-medium'>
+        <ul className='flex-col font-normal'>
           <li>
-            <div className='w-20 rounded bg-cyan-700 bg-opacity-80 text-center font-semibold py-2 px-2 text-white'>
+            <div className='w-20 rounded bg-cyan-700 bg-opacity-80 text-center font-mono py-2 px-2 text-white'>
               2012
             </div>
             <p className='list-item__text py-3 text-white'>{educationText}</p>
-            <span className='text-cyan-500'>Базовое образование</span>
+            <span className='text-cyan-400 font-medium'>Базовое образование</span>
           </li>
           <li className='pt-5'>
-            <div className='w-20 rounded bg-cyan-700 bg-opacity-80 text-center font-semibold py-2 px-2 text-white'>
+            <div className='w-20 rounded bg-cyan-700 bg-opacity-80 text-center font-mono py-2 px-2 text-white'>
               2013
             </div>
             <p className='py-3 text-white'>{educationText2}</p>
-            <span className='text-cyan-500 font-medium'>Интернатура</span>
+            <span className='text-cyan-400 font-medium'>Интернатура</span>
           </li>
         </ul>
       </motion.div>

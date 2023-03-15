@@ -7,39 +7,39 @@ function Work() {
   return (
     <div className='flex-col'>
       <div>
-        <ul>
+        <ul className="space-y-2">
           <li>
             <button
               onClick={() => setOpenMap(!openMap)}
               type='button'
-              className='absolute left-[80px] top-[20px] bg-red-600 bg-opacity-90 w-fit py-1 px-2 rounded-3xl text-white font-medium transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110'
+              className='absolute left-[80px] top-[18px] bg-red-600 bg-opacity-90 w-fit py-1 px-2 rounded-3xl text-white font-mono transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110'
             >
               {openMap ? "Закрыть" : "Я.Карта"}
             </button>
 
-            <h3 className='py-2 text-gray-700 font-semibold italic'>Адрес</h3>
+            <h3 className='py-1 text-gray-700 font-semibold border-b-2 border-gray-100 border-dashed w-fit'>Адрес</h3>
 
-            <p className='text-cyan-700 font-medium'>
+            <p className='text-cyan-700 font-mono'>
               197198, Санкт-Петербург, ул. Пионерская, д. 8
             </p>
           </li>
           <li className='work__item'>
-            <h3 className='text-gray-700 py-2 font-semibold italic'>E-mail</h3>
-            <p className='text-cyan-700 font-medium'>clinic@denteria.ru</p>
+            <h3 className='text-gray-700 py-1 font-semibold border-b-2 border-gray-100 border-dashed w-fit'>E-mail</h3>
+            <p className='text-cyan-700 font-mono'>clinic@denteria.ru</p>
           </li>
           <li className='work__item'>
-            <h3 className='text-gray-700 py-2 font-semibold italic'>Телефон</h3>
-            <p className='text-cyan-700 font-medium'>+7(812)209-1607</p>
+            <h3 className='text-gray-700 py-1 font-semibold border-b-2 border-gray-100 border-dashed w-fit'>Телефон</h3>
+            <p className='text-cyan-700 font-mono'>+7(812)209-1607</p>
           </li>
           <li className='work__item'>
-            <h3 className='text-gray-700 py-2 font-semibold italic'>
+            <h3 className='text-gray-700 py-1 font-semibold border-b-2 border-gray-100 border-dashed w-fit'>
               Режим работы
             </h3>
-            <p className='text-cyan-700 font-medium'>Пн-Вс 09:00-21:00</p>
+            <p className='text-cyan-700 font-mono'>Пн-Вс 09:00-21:00</p>
           </li>
           <li className='work__item'>
-            <div className='work__item-container flex items-center'>
-              <h3 className='text-gray-700 font-semibold italic py-2'>
+            <div className='work__item-container flex items-center space-y-0'>
+              <h3 className='text-gray-700 font-semibold py-1'>
                 Связаться с администратором
               </h3>
               <a

@@ -55,7 +55,7 @@ function Landing() {
         <motion.h2
           custom={2}
           variants={textByXAnimation}
-          className='landing__subtext text-center text-l sm:text-sm font-semibold text-cyan-700 w-60'
+          className='landing__subtext text-center font-medium text-cyan-700 text-md sm:text-sm w-60'
         >
           Врач-стоматолог-терапевт / врач-стоматолог детский
           <br />

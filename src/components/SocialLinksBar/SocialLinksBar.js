@@ -16,7 +16,7 @@ function SocialLinksBar({ className }) {
         delay: 1,
         ease: easeOut,
       }}
-      className={className}
+      className={`items-center justify-center ${className}`}
     >
       <li className='rounded landing__link mr-5 landing__link_gmail transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-cyan-500 duration-300 hover:cursor-pointer'>
         <SocialLink link='mailto:m.nekrashevich@denteria.ru' title='Gmail'/>
