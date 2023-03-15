@@ -1,17 +1,16 @@
 import { useRef } from "react";
-import mainImage from '../../images/main-image.jpg';
+import mainImage from "../../images/main-image.jpg";
 import "./Landing.css";
 import { motion, useScroll, useTransform } from "framer-motion";
 
-
-function Landing(options) {
+function Landing() {
   const experience = new Date().getFullYear() - 2013;
-  let ref = useRef()
+  let ref = useRef();
   let { scrollYProgress } = useScroll({
     target: ref,
-    offset: ['start start', 'end start']
-  })
-  let y = useTransform(scrollYProgress, [0, 1], ['0%', '100%'])
+    offset: ["start start", "end start"],
+  });
+  let y = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
   let opacity = useTransform(scrollYProgress, [0, 1], [1, 0]);
 
   const textByXAnimation = {
@@ -30,19 +29,22 @@ function Landing(options) {
 
   return (
     <motion.section
-    ref={ref}
-    initial='hidden'
-    whileInView='visible'
-    className='landing flex  flex-col min-h-[570px]'
-    style={{
-      backgroundImage: `url(${mainImage})`,
-      backgroundPosition: 'center',
-      backgroundSize: 'cover',
-      backgroundRepeat: 'no-repeat',
-
-    }}
+      ref={ref}
+      initial='hidden'
+      whileInView='visible'
+      className='landing flex flex-col min-h-[570px]'
+      style={{
+        backgroundImage: `url(${mainImage})`,
+        backgroundPosition: "center",
+        backgroundSize: "cover",
+        backgroundRepeat: "no-repeat",
+        opacity,
+      }}
     >
-      <motion.div style={{y}}className='flex flex-col items-end z-20 px-3 pt-32'>
+      <motion.div
+        style={{ y }}
+        className='flex flex-col items-end z-20 px-3 pt-32'
+      >
         <motion.h1
           custom={1}
           variants={textByXAnimation}
@@ -53,7 +55,7 @@ function Landing(options) {
         <motion.h2
           custom={2}
           variants={textByXAnimation}
-          className='landing__subtext text-center text-l sm:text-sm font-semibold text-gray-700 w-60'
+          className='landing__subtext text-center text-l sm:text-sm font-semibold text-cyan-700 w-60'
         >
           Врач-стоматолог-терапевт / врач-стоматолог детский
           <br />

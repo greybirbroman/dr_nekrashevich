@@ -24,7 +24,7 @@ function Specialization() {
         <ul className='flex-col font-medium text-white space-y-3'>
           <li className='flex items-center'>
             <img className='icon' src={icon} alt='Иконка' />
-            <span className='pl-2'>Лечение детей</span>
+            <span className='pl-2'>Лечение взрослых и детей</span>
           </li>
           <li className='flex items-center'>
             <img className='icon' src={icon} alt='Иконка' />

@@ -16,9 +16,7 @@ function Instruments() {
       >
         <CardTitle title='Инструменты' />
         <div className='absolute -z-10 w-full opacity-50 top-0 bottom-0 left-0 right-0 bg-black'></div>
-        <div className='flex flex-col items-center'>
-          {/* <div className='instruments__icon mb-3'></div> */}
-        </div>
+        <div className='flex flex-col items-center'></div>
         <ul className='flex-col font-medium text-white space-y-3'>
           <li className='flex items-baseline'>
             <img className='icon' src={icon} alt='Иконка' />

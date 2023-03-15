@@ -9,7 +9,7 @@ import "./Main.css";
 
 function Main() {
   return (
-    <main className='flex-col flex-1'>
+    <main className='flex-col flex-1' id="#t3">
       <Landing />
       <SocialLinksBar
         className={
