@@ -1,68 +1,67 @@
-import { useRef } from "react";
-import mainImage from "../../images/main-image.jpg";
 import "./Landing.css";
-import { motion, useScroll, useTransform } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
+import LandingImage from "../../images/main-image.jpg";
+import SocialLinksBar from "../SocialLinksBar/SocialLinksBar";
 
 function Landing() {
   const experience = new Date().getFullYear() - 2013;
-  let ref = useRef();
-  let { scrollYProgress } = useScroll({
-    target: ref,
-    offset: ["start start", "end start"],
-  });
-  let y = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
-  let opacity = useTransform(scrollYProgress, [0, 1], [1, 0]);
-
-  const textByXAnimation = {
-    hidden: {
-      x: -100,
-      opacity: 0,
-    },
-    visible: (custom) => ({
-      x: 0,
-      opacity: 1,
-      transition: {
-        delay: custom * 0.2,
-      },
-    }),
-  };
 
   return (
-    <motion.section
-      ref={ref}
-      initial='hidden'
-      whileInView='visible'
-      className='landing flex flex-col min-h-[570px]'
-      style={{
-        backgroundImage: `url(${mainImage})`,
-        backgroundPosition: "center",
-        backgroundSize: "cover",
-        backgroundRepeat: "no-repeat",
-        opacity,
-      }}
-    >
-      <motion.div
-        style={{ y }}
-        className='flex flex-col items-end z-20 px-3 pt-32'
+    <AnimatePresence>
+      <motion.main
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.75 }}
+        className='flex flex-col justify-center lg:items-end px-5 space-y-3 lg:space-y-5 text-center pb-20'
       >
-        <motion.h1
-          custom={1}
-          variants={textByXAnimation}
-          className='landing__text text-gray-700 text-5xl md:text-4xl sm:text-3xl pb-5 font-semibold text-right text'
-        >
-          Некрашевич <br /> Марина Сергеевна
-        </motion.h1>
-        <motion.h2
-          custom={2}
-          variants={textByXAnimation}
-          className='landing__subtext text-center font-medium text-cyan-700 text-md sm:text-sm w-60'
-        >
-          Врач-стоматолог-терапевт / врач-стоматолог детский
-          <br />
-          Стаж {experience} лет
-        </motion.h2>
-      </motion.div>
-    </motion.section>
+        <img
+          src={LandingImage}
+          className='absolute top-0 left-0 bottom-0 right-0 -z-10 object-cover w-[100%] h-screen'
+          alt='Главное изображение'
+        />
+        <div className='space-y-2 lg:space-y-4'>
+          <motion.h1
+            initial={{
+              x: -500,
+              opacity: 0,
+            }}
+            animate={{
+              x: 0,
+              opacity: 1,
+            }}
+            transition={{
+              duration: 0.5,
+            }}
+            className='text-gray-700 font-semibold text-3xl md:text-4xl lg:text-5xl xl:text-6xl'
+          >
+            Некрашевич <br /> Марина Сергеевна
+          </motion.h1>
+          <motion.h2
+            initial={{
+              x: -250,
+              opacity: 0,
+            }}
+            animate={{
+              x: 0,
+              opacity: 1,
+            }}
+            transition={{
+              duration: 1,
+            }}
+            className='font-light lg:font-normal text-gray-500 leading-4 lg:leading-5 text-sm lg:text-lg'
+          >
+            Врач-стоматолог-терапевт /<br /> врач-стоматолог детский
+            <br />
+            <span className='font-mono text-cyan-700'>
+              Стаж {experience} лет
+            </span>
+          </motion.h2>
+          <SocialLinksBar
+            className={"flex justify-center w-full lg:justify-center"}
+          />
+        </div>
+      </motion.main>
+    </AnimatePresence>
   );
 }
 export default Landing;

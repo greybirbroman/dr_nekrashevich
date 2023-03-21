@@ -1,8 +1,25 @@
+import { motion } from 'framer-motion';
+
 function CardTitle({ title }) {
   return (
-    <h2 className='education text-2xl font-mono uppercase mb-20 sm:mb-10 xs:mb-10 bg-cyan-700 rounded w-fit text-white py-3 px-3 bg-opacity-80'>
+    <motion.h2 
+    initial={{
+      x: 150,
+      opacity: 0
+    }}
+    animate={{
+      x: 0,
+      opacity: 1
+    }}
+    transition={{
+      delay: 0.5,
+      duration: 1,
+      type: 'spring',
+      stiffness: 100,
+    }}
+    className='education text-xl lg:text-2xl font-mono uppercase mb-10 lg:mb-20 bg-white rounded-2xl w-fit text-green-600 py-3 px-3 bg-opacity-80'>
       {title}
-    </h2>
+    </motion.h2>
   );
 }
 export default CardTitle;

@@ -14,8 +14,19 @@
   font-family: 'Inter var', Arial, Helvetica, sans-serif;
   width: 100%;
   height: 100vh;
-  max-width: 1600px;
   min-width: 320px;
   position: relative;
+}
+
+.link_vk {
+  background-image: url(./images/vk_logo.png);
+}
+
+.link_telegram {
+  background-image: url(./images/telegram_logo.png);
+}
+
+.link_gmail {
+  background-image: url(./images/gmail_logo.png);
 }
 

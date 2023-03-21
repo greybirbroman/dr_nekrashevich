@@ -9,21 +9,3 @@
     background-repeat: no-repeat;
     background-position: center center;
 }
-
-.landing__link_vk {
-    background-image: url(../../images/vk_logo.png);
-}
-
-.landing__link_telegram {
-    background-image: url(../../images/telegram_logo.png);
-}
-
-.landing__link_gmail {
-    background-image: url(../../images/gmail_logo.png);
-}
-
-@media screen and(max-width: 500px) {
-    .landing {
-        background-size: contain;
-    }
-}
