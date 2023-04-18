@@ -1,10 +1,9 @@
 import React from 'react';
 import logo from '../../images/logo.png';
-import './Logo.css'
 
 function Logo() {
     return (
-        <img src={logo} className='logo' title='Логотип' alt='Логотип'/>
+        <img src={logo} className='w-20 object-contain' title='лого Некрашевич' alt='Некрашевич М.С. - лого'/>
     )
 }
 export default Logo

@@ -2,9 +2,9 @@ import { motion } from 'framer-motion';
 
 function CardTitle({ title }) {
   return (
-    <motion.h2 
+    <motion.h3 
     initial={{
-      x: 150,
+      x: -50,
       opacity: 0
     }}
     animate={{
@@ -15,11 +15,10 @@ function CardTitle({ title }) {
       delay: 0.5,
       duration: 1,
       type: 'spring',
-      stiffness: 100,
     }}
-    className='education text-xl lg:text-2xl font-mono uppercase mb-10 lg:mb-20 bg-white rounded-2xl w-fit text-green-600 py-3 px-3 bg-opacity-80'>
+    className='education text-xl shadow-lg lg:text-2xl font-mono uppercase mb-10 lg:mb-20 bg-slate-100 rounded-xl w-fit py-3 px-3 bg-opacity-80'>
       {title}
-    </motion.h2>
+    </motion.h3>
   );
 }
 export default CardTitle;

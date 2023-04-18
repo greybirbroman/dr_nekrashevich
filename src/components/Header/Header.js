@@ -1,17 +1,16 @@
 import Logo from "../Logo/Logo";
-import HeaderLink from "../HeaderLink/HeaderLink";
 import { Link, useLocation } from "react-router-dom";
 import { motion } from "framer-motion";
 
 function Header() {
   const location = useLocation();
   return (
-    <header className='flex justify-between items-center py-2 px-5 md:px-10 lg:px-10 relative z-20'>
+    <header className={`flex justify-between items-center py-5 px-5 sm:py-3 sm:px-3 z-20 ${location.pathname === '/' ? '' : 'shadow-md'}`}>
       <Logo />
       <nav>
         <motion.ul
           initial={{
-            x: -500,
+            x: -100,
             opacity: 0,
           }}
           animate={{
@@ -23,13 +22,13 @@ function Header() {
             stiffness: 50,
             dumping: 40,
           }}
-          className='flex space-x-2'
+          className='flex gap-2 text-white text-normal font-normal md:text-lg md:font-medium lg:text-lg lg:font-semibold'
         >
           {location.pathname !== "/" ? (
             <li>
               <Link
                 to='/'
-                className='inline-flex text-white text-normal lg:text-lg font-normal lg:font-medium py-3 px-3 bg-cyan-700 rounded-full'
+                className='inline-flex py-3 px-5 sm:px-3 bg-cyan-700 rounded-2xl'
               >
                 Главная
               </Link>
@@ -39,7 +38,7 @@ function Header() {
             <li>
               <Link
                 to='/about'
-                className='inline-flex text-white text-normal lg:text-lg font-normal lg:font-medium py-3 px-3 bg-cyan-700 rounded-full'
+                className='inline-flex py-3 px-5 sm:px-3 bg-cyan-700 rounded-2xl'
               >
                 Обо мне
               </Link>
@@ -49,7 +48,7 @@ function Header() {
             <li>
               <Link
                 to='/work'
-                className='inline-flex text-white text-normal lg:text-lg font-normal lg:font-medium py-3 px-3 bg-cyan-700 rounded-full'
+                className='inline-flex py-3 px-5 sm:px-3 bg-cyan-700 rounded-2xl'
                 >
                   Записаться
               </Link>

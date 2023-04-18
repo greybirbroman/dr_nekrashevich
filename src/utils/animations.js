@@ -1,15 +1,15 @@
 const sectionListVariants = {
   visible: (i) => ({
     opacity: 1,
-    y: 0,
+    x: 0,
     transition: {
       delay: i * 0.2,
-      duration: 0.5,
+      duration: 0.7,
     },
   }),
   hidden: {
     opacity: 0,
-    y: -1000,
+    x: -100,
   },
 };
 const sectionColsVariants = {
@@ -19,14 +19,11 @@ const sectionColsVariants = {
     transition: {
       delay: i * 0.2,
       duration: 0.5,
-      type: "tween",
-
-      dumping: 20,
     },
   }),
   hidden: {
     opacity: 0,
-    x: -500,
+    x: -100,
   },
 };
 
@@ -40,7 +37,7 @@ const container = {
       mass: 0.4,
       damping: 8,
       when: 'beforeChildren',
-      staggerChildren: 0.25,
+      staggerChildren: 0.20,
     },
   },
 };
@@ -49,4 +46,22 @@ const item = {
   show: { opacity: 1 },
 };
 
-export { sectionListVariants, sectionColsVariants, container, item };
+const textVariant = (delay) => {
+  return {
+    hidden: {
+      y: -50,
+      opacity: 0,
+    },
+    show: {
+      y: 0,
+      opacity: 1,
+      transition: {
+        type: "spring",
+        duration: 1.25,
+        delay: delay,
+      },
+    },
+  };
+};
+
+export { sectionListVariants, sectionColsVariants, textVariant, container, item };

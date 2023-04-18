@@ -6,7 +6,7 @@ function SocialLinksBar({ className }) {
     <>
     <motion.ul
       initial={{
-        x: -500,
+        x: -100,
         opacity: 0,
       }}
       animate={{
@@ -19,13 +19,13 @@ function SocialLinksBar({ className }) {
       className={`${className}`}
     >
       <li className='rounded landing__link link_gmail transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-cyan-500 duration-300 hover:cursor-pointer'>
-        <SocialLink link='mailto:m.nekrashevich@denteria.ru' title='Gmail'/>
+        <SocialLink link='mailto:m.nekrashevich@denteria.ru' title='Gmail, почтовый ящик, почта'/>
       </li>
       <li className='rounded landing__link link_telegram transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-cyan-500 duration-300 hover:cursor-pointer'>
-        <SocialLink link='https://t.me/MarinaNekrashevich' title='Telegram' />
+        <SocialLink link='https://t.me/MarinaNekrashevich' title='Telegram, месседжер Телеграм' />
       </li>
       <li className='rounded landing__link link_vk transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-cyan-500 duration-300 hover:cursor-pointer'>
-        <SocialLink link='https://m.vk.com/meowwzilla' title='VKontakte' />
+        <SocialLink link='https://m.vk.com/meowwzilla' title='VKontakte, Вконтакте, VK, ВК, социальная сеть' />
       </li>
     </motion.ul>
     </>
