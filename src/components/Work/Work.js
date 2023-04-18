@@ -1,4 +1,5 @@
 import './Work.css';
+import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion';
 import { container, item } from '../../utils/animations';
 import { adressList } from '../../utils/const';
@@ -14,10 +15,20 @@ const theme = createTheme({
     secondary: {
       main: '#11cb5f',
     },
+    maps: {
+      main: '#b00000'
+    }
   },
 });
 
 function Work() {
+
+  const [openMap, setOpenMap] = useState(false)
+
+  function toggleMap() {
+    setOpenMap(!openMap)
+  }
+
   return (
     <AnimatePresence>
       <motion.main
@@ -75,10 +86,18 @@ function Work() {
               >
                 Telegram
               </Button>
+              <Button
+                className=''
+                variant="outlined"
+                color='maps'
+                onClick={toggleMap}
+              >
+                Яндекс.Карта
+              </Button>
               </ThemeProvider>
             </div>
           </motion.ul>
-
+          {openMap &&
           <div className='work__map'>
             <div style={{ position: 'relative', overflow: 'hidden' }}>
               <a
@@ -113,6 +132,7 @@ function Work() {
               ></iframe>
             </div>
           </div>
+        }
         </div>
       </motion.main>
     </AnimatePresence>

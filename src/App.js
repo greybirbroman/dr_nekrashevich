@@ -10,7 +10,7 @@ function App() {
  
 
   return (
-    <div className='App w-full h-[100vh] mx-auto flex flex-col justify-between'>
+    <div className='App w-full h-screen mx-auto flex flex-col justify-between'>
       <Header />
       <Routes>
         <Route path='/' Component={Landing}/>
