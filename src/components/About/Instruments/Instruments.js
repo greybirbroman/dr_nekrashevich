@@ -25,7 +25,7 @@ function Instruments() {
               <img className='icon' src={icon} alt='Иконка зуба, зуб, стоматолгия' />
               <p className='pl-2'>
                 {item.text}
-                <span className='text-cyan-700 font-mono'>{item.span}</span>
+                <span className='text-cyan-700 font-mono text-sm md:text-md lg:text-lg'>{item.span}</span>
               </p>
             </motion.li>
           ))}

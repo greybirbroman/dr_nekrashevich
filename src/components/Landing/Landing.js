@@ -24,7 +24,7 @@ function Landing() {
               Некрашевич <br /> Марина Сергеевна
             </h1>
             <h2
-              className='font-light lg:font-normal text-gray-500 leading-4 lg:leading-5 text-sm lg:text-lg'
+              className='font-light italic lg:font-normal text-gray-500 leading-4 lg:leading-5 text-sm lg:text-lg'
             >
               Врач-стоматолог-терапевт /<br /> врач-стоматолог детский
               <br />

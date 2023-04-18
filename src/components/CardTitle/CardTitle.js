@@ -16,7 +16,7 @@ function CardTitle({ title }) {
       duration: 1,
       type: 'spring',
     }}
-    className='education text-xl shadow-lg lg:text-2xl font-mono uppercase mb-10 lg:mb-20 bg-slate-100 rounded-xl w-fit py-3 px-3 bg-opacity-80'>
+    className='education text-xl shadow-lg lg:text-2xl font-medium uppercase mb-10 lg:mb-20 bg-slate-100 rounded-xl w-fit py-3 px-3 bg-opacity-80'>
       {title}
     </motion.h3>
   );

@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 function Header() {
   const location = useLocation();
   return (
-    <header className={`flex justify-between items-center py-5 px-5 sm:py-3 sm:px-3 z-20 ${location.pathname === '/' ? '' : 'shadow-md'}`}>
+    <header className={`flex justify-between items-center py-5 px-5 md:py-3 sm:py-3 sm:px-3 z-20 ${location.pathname === '/' ? '' : 'shadow-md'}`}>
       <Logo />
       <nav>
         <motion.ul
@@ -22,7 +22,7 @@ function Header() {
             stiffness: 50,
             dumping: 40,
           }}
-          className='flex gap-2 text-white text-normal font-normal md:text-lg md:font-medium lg:text-lg lg:font-semibold'
+          className='flex gap-2 text-white text-md md:text-lg lg:text-lg'
         >
           {location.pathname !== "/" ? (
             <li>

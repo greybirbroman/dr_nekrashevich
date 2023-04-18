@@ -7,9 +7,6 @@ module.exports = {
   content: ['./src/**/*.{js,jsx}'],
   theme: {
     extend: {
-      fontFamily: {
-        sans: ['Inter var', ...defaultTheme.fontFamily.sans],
-      },
       flex: {
         '0': '0 0 auto',
         '1': '1 0 auto',
