@@ -1,11 +1,12 @@
-import Logo from "../Logo/Logo";
-import { Link, useLocation } from "react-router-dom";
-import { motion } from "framer-motion";
+import Logo from '../Logo/Logo';
+import HeaderLink from '../HeaderLink/HeaderLink';
+import { motion } from 'framer-motion';
 
 function Header() {
-  const location = useLocation();
   return (
-    <header className={`flex justify-between items-center py-5 px-5 md:py-3 sm:py-3 sm:px-3 z-20 ${location.pathname === '/' ? '' : 'shadow-md'}`}>
+    <header
+      className={`flex justify-between items-center py-5 px-5 md:py-3 sm:py-3 sm:px-3 z-20 shadow-md`}
+    >
       <Logo />
       <nav>
         <motion.ul
@@ -18,42 +19,19 @@ function Header() {
             opacity: 1,
           }}
           transition={{
-            type: "spring",
+            type: 'spring',
             stiffness: 50,
             dumping: 40,
           }}
-          className='flex gap-2 text-white text-md md:text-lg lg:text-lg'
+          className='flex gap-2 lg:gap-3'
         >
-          {location.pathname !== "/" ? (
-            <li>
-              <Link
-                to='/'
-                className='inline-flex py-3 px-5 sm:px-3 bg-cyan-700 rounded-2xl'
-              >
-                Главная
-              </Link>
-            </li>
-          ) : null}
-          {location.pathname !== "/about" ? (
-            <li>
-              <Link
-                to='/about'
-                className='inline-flex py-3 px-5 sm:px-3 bg-cyan-700 rounded-2xl'
-              >
-                Обо мне
-              </Link>
-            </li>
-          ) : null}
-          {location.pathname !== "/work" ? (
-            <li>
-              <Link
-                to='/work'
-                className='inline-flex py-3 px-5 sm:px-3 bg-cyan-700 rounded-2xl'
-                >
-                  Записаться
-              </Link>
-            </li>
-          ) : null}
+          <li>
+            <HeaderLink text={'Обо мне'} link='#about'></HeaderLink>
+          </li>
+
+          <li>
+            <HeaderLink text={'Записаться'} link='#work'></HeaderLink>
+          </li>
         </motion.ul>
       </nav>
     </header>

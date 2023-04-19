@@ -1,11 +1,11 @@
 
 import { motion } from "framer-motion";
 
-function HeaderLink({ text }) {
+function HeaderLink({ text, link }) {
   
   return (
     <motion.a
-      className='text-white font-normal text-lg lg:text-xl lg:font-medium py-2 px-2 bg-cyan-700 rounded-full'
+    className='inline-flex py-3 px-5 sm:px-3 bg-cyan-700 rounded-full text-white'
       whileHover={{
         scale: 1.1,
         color: "rgb(6, 182, 212)",
@@ -13,7 +13,7 @@ function HeaderLink({ text }) {
       }}
       transition={{ type: "spring", stiffness: 400, damping: 20, duration: 1 }}
       whileTap={{scale: 0.9}}
-      href={''}
+      href={link}
       rel='noreferrer'
     >
       {text}

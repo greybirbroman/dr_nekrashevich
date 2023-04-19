@@ -4,7 +4,7 @@ const sectionListVariants = {
     x: 0,
     transition: {
       delay: i * 0.2,
-      duration: 0.7,
+      duration: 1,
     },
   }),
   hidden: {
@@ -64,4 +64,4 @@ const textVariant = (delay) => {
   };
 };
 
-export { sectionListVariants, sectionColsVariants, textVariant, container, item };
+export { sectionListVariants, sectionColsVariants, textVariant, container, item};
