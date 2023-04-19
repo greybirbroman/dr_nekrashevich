@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 function Header() {
   return (
     <header
-      className={`flex justify-between items-center py-5 px-5 md:py-3 sm:py-3 sm:px-3 z-20 shadow-md`}
+      className='flex justify-between items-center py-5 px-5 md:py-3 sm:py-3 sm:px-3 absolute top-0 left-0 right-0'
     >
       <Logo />
       <nav>
@@ -25,13 +25,8 @@ function Header() {
           }}
           className='flex gap-2 lg:gap-3'
         >
-          <li>
-            <HeaderLink text={'Обо мне'} link='#about'></HeaderLink>
-          </li>
-
-          <li>
-            <HeaderLink text={'Записаться'} link='#work'></HeaderLink>
-          </li>
+          <HeaderLink text={'Обо мне'} link='#about'></HeaderLink>
+          <HeaderLink text={'Записаться'} link='#work'></HeaderLink>
         </motion.ul>
       </nav>
     </header>
