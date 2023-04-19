@@ -1,6 +1,6 @@
 <h1>dr_Nekrashevich</h1>
 
-![screen](/readme_screen.png)
+<img src='./readme_screen.png' width='700px'/>
 
 <h2>Интерактивная страница-визитка врача-стоматолога</h2>
 
