@@ -1,6 +1,5 @@
 /** @type {import('tailwindcss').Config} */
 
-
 const defaultTheme = require('tailwindcss/defaultTheme')
 
 module.exports = {
@@ -11,6 +10,10 @@ module.exports = {
         '0': '0 0 auto',
         '1': '1 0 auto',
       },
+      backgroundImage: {
+        'link-mail': "url('')"
+      },
+
       screens: {
         'sm': {'min': '320px', 'max': '767px'},
         // => @media (min-width: 320px and max-width: 767px) { ... }

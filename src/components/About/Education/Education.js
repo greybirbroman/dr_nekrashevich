@@ -4,7 +4,7 @@ import { educationlist } from '../../../utils/const';
 
 function Education() {
   return (
-      <Card 
+      <Card
       title='Образование'
       list={educationlist}
       flex={'flex flex-col gap-3'}
