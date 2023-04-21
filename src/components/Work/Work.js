@@ -53,7 +53,7 @@ function Work() {
           <p className='text-[18px] sm:text-[16px] font-normal'>
             {' '}
             По всем интересующим вопросам напишите
-            сообщение в любой удобной для вас социальной сети
+            сообщение в любой удобной для Вас социальной сети
           </p>
           <SocialLinksBar className='flex justify-end' />
         </motion.div>
@@ -93,7 +93,7 @@ function Work() {
                   href='https://t.me/+79215863777'
                   variant='outlined'
                 >
-                  Telegram
+                  telegram
                 </Button>
                 <Button variant='outlined' color='maps' onClick={toggleMap}>
                   Яндекс.Карта
